@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Layout2Activity">
+    <Button
+        android:id="@+id/btnBoy3"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#F8F8F8"
+        android:text="All"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBoy2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBoy"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#F8F8F8"
+        android:text="Boy"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBoy2"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#F8F8F8"
+        android:text="Girl"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnBoy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gview"
+        android:layout_width="393dp"
+        android:layout_height="621dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBoy2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
